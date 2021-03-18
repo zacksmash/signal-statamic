@@ -1,0 +1,49 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: head_scripts
+        field:
+          theme: material
+          mode: htmlmixed
+          indent_type: tabs
+          indent_size: 4
+          key_map: default
+          line_numbers: true
+          line_wrapping: true
+          display: 'Head Scripts'
+          type: code
+          icon: code
+          instructions: 'These scripts will be fired in the <code>&lt;head&gt;<\/code> tag, BEFORE the page loads'
+          listable: hidden
+      -
+        handle: body_scripts
+        field:
+          theme: material
+          mode: htmlmixed
+          indent_type: tabs
+          indent_size: 4
+          key_map: default
+          line_numbers: true
+          line_wrapping: true
+          display: 'Body Scripts'
+          type: code
+          icon: code
+          instructions: 'These scripts will be fired IMMEDIATELY AFTER the opening <code>&lt;body&gt;<\/code> tag.'
+          listable: hidden
+      -
+        handle: footer_scripts
+        field:
+          theme: material
+          mode: htmlmixed
+          indent_type: tabs
+          indent_size: 4
+          key_map: default
+          line_numbers: true
+          line_wrapping: true
+          display: 'Footer Scripts'
+          type: code
+          icon: code
+          instructions: 'These scripts will be fired BEFORE the closing <code>&lt;body&gt;<\/code> tag.'
+          listable: hidden

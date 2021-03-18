@@ -1,0 +1,36 @@
+<nav class="uk-navbar-container" role="navigation">
+  <div class="uk-container">
+    <div class="uk-navbar" uk-navbar>
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="/">Logo</a>
+      </div>
+
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+          {{ nav:main_menu }}
+            <li>
+              <a href="{{ url }}">{{ title }}</a>
+
+              {{ if children }}
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-nav>
+                    {{ children }}
+                      <li>
+                        <a href="{{ url }}">{{ title }}</a>
+                        {{ if children }}
+                          <ul class="uk-nav-sub">
+                            {{ *recursive children* }}
+                          </ul>
+                        {{ /if }}
+                      </li>
+                    {{ /children }}
+                  </ul>
+                </div>
+              {{ /if }}
+            </li>
+          {{ /nav:main_menu }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

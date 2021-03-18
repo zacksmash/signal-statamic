@@ -1,0 +1,35 @@
+sections:
+  main:
+    display: Main
+    fields:
+    -
+      handle: first_name
+      field:
+        input_type: text
+        display: 'First Name'
+        type: text
+        icon: text
+        listable: hidden
+    -
+      handle: last_name
+      field:
+        input_type: text
+        display: 'Last Name'
+        type: text
+        icon: text
+        listable: hidden
+    -
+      handle: email_address
+      field:
+        input_type: email
+        display: 'Email Address'
+        type: text
+        icon: text
+        listable: hidden
+    -
+      handle: message
+      field:
+        display: Message
+        type: textarea
+        icon: textarea
+        listable: hidden

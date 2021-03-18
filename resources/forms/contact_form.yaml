@@ -1,0 +1,7 @@
+title: 'Contact Form'
+honeypot: subject
+email:
+  -
+    to: team@schematik.io
+    from: noreply@schematik.io
+    subject: 'New Contact Form Submission'
