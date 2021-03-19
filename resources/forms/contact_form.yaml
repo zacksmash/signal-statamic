@@ -2,6 +2,6 @@ title: 'Contact Form'
 honeypot: subject
 email:
   -
-    to: team@schematik.io
-    from: noreply@schematik.io
+    to: info@website.com
+    from: noreply@website.com
     subject: 'New Contact Form Submission'
